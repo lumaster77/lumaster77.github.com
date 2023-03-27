@@ -35,4 +35,32 @@
     
 </body>
 <script src="./src/js/index.js"></script>
+<script>
+  window.dataLayer.push({ecommerce:null});
+        window.dataLayer.push({
+            'event': 'purchase',
+            'ecommerce': {
+              'purchase': {
+                'actionField': {
+                  'id': 'T12345',
+                  'revenue': '99.00',
+                  'tax': '15.60',
+                  'shipping': '0.00',
+                  'coupon': '',
+                },
+                'products': [
+                  {
+                    'id': '01',
+                    'name': 'suscribed',
+                    'brand': 'shift',
+                    'category': 'fitness',
+                    'variant': 'online',
+                    'price': '99.00',
+                    'quantity': '1',
+                  },
+                ],
+              },
+            },
+          });
+</script>
 </html>
