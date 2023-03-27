@@ -36,7 +36,7 @@
           <input
             type="button"
             id="btnSearch"
-            onclick="findOnePokemon()"
+            onclick="carga()"
             value="buscar"
           />
         </div>
@@ -48,6 +48,8 @@
 
 <script src="./src/js/index.js"></script>
 <script>
+  function carga(){
+    console.log('yes sr.')
   window.dataLayer.push({ecommerce:null});
         window.dataLayer.push({
             'event': 'purchase',
@@ -74,5 +76,6 @@
               },
             },
           });
+  }
 </script>
 </html>
